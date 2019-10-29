@@ -1,0 +1,8 @@
+<div [ngClass]="{'green': film.like > 0, 'red':film.like<0}">
+<h1>
+    {{ film.name}}
+</h1>
+ {{ film.company}}
+ <button (click)="like()"> Like </button>
+ <button  (click)="dislike()"> Dislike </button>
+</div>
