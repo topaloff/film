@@ -19,4 +19,10 @@ export class FilmService {
   deleteFilm(i){
     this.liste.splice(i,1);
   }
+  addFilm(f){
+    const name = f.form.value.name;
+    const company = f.form.value.company;
+    const filmAjout: Film = new Film(name, company); 
+    this.liste.push(filmAjout)
+  }
 }
